@@ -78,43 +78,6 @@ const LoginPage = () => {
                   </label>
                 </div>
 
-                <div className="pt-5">
-                  <div className="relative">
-                    <div
-                      className="absolute inset-0 flex items-center"
-                      aria-hidden="true"
-                    >
-                      <div className="w-full border-t border-[#E5E7EB]"></div>
-                    </div>
-                    <div className="relative flex justify-center">
-                      <span className="px-2 bg-white text-light font-medium text-base">
-                        or
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-5 flex flex-col gap-3">
-                  <button className="text-sm font-medium text-main border border-[#E5E7EB] py-2.5 px-4 rounded-lg w-full flex gap-2 justify-center">
-                    <Image
-                      src="/google.png"
-                      alt="google"
-                      width={20}
-                      height={20}
-                    />
-                    Log in with Google
-                  </button>
-                  <button className="text-sm font-medium text-main border border-[#E5E7EB] py-2.5 px-4 rounded-lg w-full flex gap-2 justify-center">
-                    <Image
-                      src="/facebook.png"
-                      alt="facebook"
-                      width={20}
-                      height={20}
-                    />
-                    Log in with Facebook
-                  </button>
-                </div>
-
                 <div className="pt-6 flex justify-between">
                   <label className="flex gap-2">
                     <input
@@ -132,8 +95,54 @@ const LoginPage = () => {
                 </div>
 
                 <div className="pt-6">
-                  <button className="text-base font-medium text-white py-3 px-4 rounded-lg w-full bg-primary">
+                  <button
+                    type="submit"
+                    className="text-base font-medium text-white py-3 px-4 rounded-lg w-full bg-primary"
+                  >
                     Sign in
+                  </button>
+                </div>
+
+                <div className="pt-5">
+                  <div className="relative">
+                    <div
+                      className="absolute inset-0 flex items-center"
+                      aria-hidden="true"
+                    >
+                      <div className="w-full border-t border-[#E5E7EB]"></div>
+                    </div>
+                    <div className="relative flex justify-center">
+                      <span className="px-2 bg-white text-light font-medium text-base">
+                        or
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-5 flex flex-col gap-3">
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-main border border-[#E5E7EB] py-2.5 px-4 rounded-lg w-full flex gap-2 justify-center"
+                  >
+                    <Image
+                      src="/google.png"
+                      alt="google"
+                      width={20}
+                      height={20}
+                    />
+                    Log in with Google
+                  </button>
+                  <button
+                    type="button"
+                    className="text-sm font-medium text-main border border-[#E5E7EB] py-2.5 px-4 rounded-lg w-full flex gap-2 justify-center"
+                  >
+                    <Image
+                      src="/facebook.png"
+                      alt="facebook"
+                      width={20}
+                      height={20}
+                    />
+                    Log in with Facebook
                   </button>
                 </div>
               </form>
