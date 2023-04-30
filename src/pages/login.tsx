@@ -6,74 +6,74 @@ import Image from 'next/image';
 
 const LoginPage = () => {
   return (
-    <div className="bg-[#F9FAFB] min-h-screen flex flex-col">
+    <div className="flex min-h-screen flex-col bg-[#F9FAFB]">
       <div className="grow">
-        <div className="flex items-center justify-between px-4 py-3.5 bg-white border-b border-b-[#E5E7EB]">
+        <div className="flex items-center justify-between border-b border-b-[#E5E7EB] bg-white px-4 py-3.5">
           <div className="flex items-center gap-0.5 sm:gap-4 lg:gap-0.5">
             <Image src="/dumbbell.png" width={32} height={32} alt="Dumbbell" />
-            <span className="font-semibold text-lg">atletio</span>
+            <span className="text-lg font-semibold">atletio</span>
           </div>
 
           <nav className="hidden lg:flex lg:gap-4">
-            <span className="font-medium text-sm text-light hover:text-primary">
+            <span className="text-sm font-medium text-light hover:text-primary">
               Dashboard
             </span>
-            <span className="font-medium text-sm text-light hover:text-primary">
+            <span className="text-sm font-medium text-light hover:text-primary">
               Workout
             </span>
-            <span className="font-medium text-sm text-light hover:text-primary">
+            <span className="text-sm font-medium text-light hover:text-primary">
               Diet Plan
             </span>
-            <span className="font-medium text-sm text-light hover:text-primary">
+            <span className="text-sm font-medium text-light hover:text-primary">
               Schedule
             </span>
           </nav>
           <Bars3Icon className="h-8 w-8 text-main lg:hidden" />
-          <div className="items-center gap-1.5 hidden lg:flex">
+          <div className="hidden items-center gap-1.5 lg:flex">
             <ArrowLeftOnRectangleIcon className="h-8 w-8 text-main" />
             <span className="text-sm text-main">Register</span>
           </div>
         </div>
 
-        <div className="pt-8 px-4 sm:pt-16 sm:px-24 lg:px-20 lg:flex lg:gap-24 lg:items-center">
-          <div className="bg-white rounded-lg px-4 py-8 sm:p-8 border border-[#E5E7EB] grow">
-            <h1 className="text-primary text-2xl font-bold">Welcome back</h1>
+        <div className="px-4 pt-8 sm:px-24 sm:pt-16 lg:flex lg:items-center lg:gap-24 lg:px-20">
+          <div className="grow rounded-lg border border-[#E5E7EB] bg-white px-4 py-8 sm:p-8">
+            <h1 className="text-2xl font-bold text-primary">Welcome back</h1>
             <div className="pt-2.5">
-              <span className="text-light text-sm font-medium">
+              <span className="text-sm font-medium text-light">
                 Don&apos;t have an account?{' '}
                 <span className="text-primary">Sign up</span>
               </span>
             </div>
 
             <form className="pt-6" method="POST">
-              <div className="flex flex-col sm:flex-row gap-5">
-                <label className="flex flex-col items-start w-full">
-                  <span className="font-medium text-sm pb-2">Email</span>
+              <div className="flex flex-col gap-5 sm:flex-row">
+                <label className="flex w-full flex-col items-start">
+                  <span className="pb-2 text-sm font-medium">Email</span>
                   <input
                     placeholder="Enter your email"
-                    className="py-3 px-4 w-full bg-[#F9FAFB] rounded-lg border border-[#D1D5DB] text-main text-sm h-[2.625rem]"
+                    className="h-[2.625rem] w-full rounded-lg border border-[#D1D5DB] bg-[#F9FAFB] px-4 py-3 text-sm text-main"
                     type="email"
                   />
                 </label>
-                <label className="flex flex-col items-start w-full">
-                  <span className="font-medium text-sm pb-2">Password</span>
+                <label className="flex w-full flex-col items-start">
+                  <span className="pb-2 text-sm font-medium">Password</span>
                   <input
                     placeholder="Enter your password"
-                    className="py-3 px-4 w-full bg-[#F9FAFB] rounded-lg border border-[#D1D5DB] text-main text-sm h-[2.625rem]"
+                    className="h-[2.625rem] w-full rounded-lg border border-[#D1D5DB] bg-[#F9FAFB] px-4 py-3 text-sm text-main"
                     type="password"
                   />
                 </label>
               </div>
 
-              <div className="pt-6 flex justify-between">
+              <div className="flex justify-between pt-6">
                 <label className="flex gap-2">
                   <input type="checkbox" className="bg-red-400 text-red-400" />
-                  <span className="flex text-light text-xs font-medium">
+                  <span className="flex text-xs font-medium text-light">
                     Remember me
                   </span>
                 </label>
 
-                <span className="text-primary text-xs font-medium">
+                <span className="text-xs font-medium text-primary">
                   Forgot password?
                 </span>
               </div>
@@ -81,7 +81,7 @@ const LoginPage = () => {
               <div className="pt-6">
                 <button
                   type="submit"
-                  className="text-base font-medium text-white py-3 px-4 rounded-lg w-full bg-primary"
+                  className="w-full rounded-lg bg-primary px-4 py-3 text-base font-medium text-white"
                 >
                   Sign in
                 </button>
@@ -96,17 +96,17 @@ const LoginPage = () => {
                     <div className="w-full border-t border-[#E5E7EB]"></div>
                   </div>
                   <div className="relative flex justify-center">
-                    <span className="px-2 bg-white text-light font-medium text-base">
+                    <span className="bg-white px-2 text-base font-medium text-light">
                       or
                     </span>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-5 flex flex-col gap-3">
+              <div className="flex flex-col gap-3 pt-5">
                 <button
                   type="button"
-                  className="text-sm font-medium text-main border border-[#E5E7EB] py-2.5 px-4 rounded-lg w-full flex gap-2 justify-center"
+                  className="flex w-full justify-center gap-2 rounded-lg border border-[#E5E7EB] px-4 py-2.5 text-sm font-medium text-main"
                 >
                   <Image
                     src="/google.png"
@@ -118,7 +118,7 @@ const LoginPage = () => {
                 </button>
                 <button
                   type="button"
-                  className="text-sm font-medium text-main border border-[#E5E7EB] py-2.5 px-4 rounded-lg w-full flex gap-2 justify-center"
+                  className="flex w-full justify-center gap-2 rounded-lg border border-[#E5E7EB] px-4 py-2.5 text-sm font-medium text-main"
                 >
                   <Image
                     src="/facebook.png"
@@ -132,7 +132,7 @@ const LoginPage = () => {
             </form>
           </div>
 
-          <div className="hidden lg:flex justify-center grow">
+          <div className="hidden grow justify-center lg:flex">
             <Image
               src="/personal-trainer.svg"
               width={608}
@@ -144,8 +144,8 @@ const LoginPage = () => {
       </div>
 
       <footer className="pt-8">
-        <div className="bg-white p-6 sm:p-12 sm:py-8 lg:px-20 border-t border-t-[#E5E7EB]">
-          <span className="text-light text-center block">
+        <div className="border-t border-t-[#E5E7EB] bg-white p-6 sm:p-12 sm:py-8 lg:px-20">
+          <span className="block text-center text-light">
             © 2021 atletio. All rights reserved.
           </span>
         </div>
