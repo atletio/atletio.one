@@ -59,7 +59,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="bg-white px-4 pt-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
+        <div className="bg-white px-4 py-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
           <div className="gap4 flex flex-col gap-4 ">
             <h1 className="text-4xl font-extrabold md:text-center">
               Popular Exercise
@@ -116,6 +116,38 @@ const LandingPage = () => {
               style={{ height: '100%', width: '100%', objectFit: 'cover' }}
               className="col-span-2 rounded-lg"
             />
+          </div>
+        </div>
+
+        <div className="bg-white px-4 py-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
+          <div className="gap4 flex flex-col gap-4 ">
+            <h1 className="text-center text-4xl font-extrabold">
+              Why Choose Us ?
+            </h1>
+            <span className="text-center text-base font-normal text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              esse quibusdam impedit explicabo, tempora corrupti iusto aliquam
+              expedita, ab quisquam sequi nobis quos amet perspiciatis.
+            </span>
+
+            <div className="flex flex-col items-center justify-around gap-12 pt-12 md:flex-row lg:justify-evenly">
+              <div className="flex flex-col items-center justify-center p-2.5">
+                <span className="text-4xl font-extrabold">73K+</span>
+                <span className="text-base font-normal text-light">Member</span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-2.5">
+                <span className="text-4xl font-extrabold">50+</span>
+                <span className="text-base font-normal text-light">
+                  Programs
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-2.5">
+                <span className="text-4xl font-extrabold">100+</span>
+                <span className="text-base font-normal text-light">
+                  Trainers
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
