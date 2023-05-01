@@ -1,3 +1,6 @@
+import React from 'react';
+import Image from 'next/image';
+
 import {
   ArrowLeftOnRectangleIcon,
   ArrowRightIcon,
@@ -5,8 +8,6 @@ import {
 } from '@heroicons/react/24/outline';
 
 import { VideoCameraIcon } from '@heroicons/react/24/solid';
-import Image from 'next/image';
-import React from 'react';
 
 const LandingPage = () => {
   return (
@@ -39,7 +40,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-6 bg-white p-4 md:px-4 md:py-16 lg:px-20 lg:py-24">
+        <div className="flex flex-col items-center justify-center gap-6 bg-white px-4 py-8  md:px-4 md:py-16 lg:px-20 lg:py-24">
           <h1 className="text-center text-4xl font-extrabold text-main md:text-5xl lg:text-6xl">
             Get fit, stay motivated, and crush your goals with{' '}
             <span className="text-primary">atletio</span>!
@@ -55,6 +56,66 @@ const LandingPage = () => {
             <button className="flex items-center justify-center gap-1 rounded-lg border border-dark px-6 py-3.5 text-main">
               <VideoCameraIcon className="h-4 w-4" /> Watch Video
             </button>
+          </div>
+        </div>
+
+        <div className="bg-white px-4 pt-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
+          <div className="gap4 flex flex-col gap-4 ">
+            <h1 className="text-4xl font-extrabold md:text-center">
+              Popular Exercise
+            </h1>
+            <span className="text-base font-normal text-light md:text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              esse quibusdam impedit explicabo, tempora corrupti iusto aliquam
+              expedita, ab quisquam sequi nobis quos amet perspiciatis.
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 place-items-center gap-y-4 pt-12 md:grid-cols-4 md:grid-rows-2 md:gap-4  lg:px-10 ">
+            <Image
+              src="/sport-1.png"
+              alt="sport-1"
+              height={400}
+              width={400}
+              style={{
+                height: '100%',
+                width: '100%',
+                objectFit: 'cover',
+              }}
+              className="rounded-lg"
+            />
+            <Image
+              src="/sport-2.png"
+              alt="sport-2"
+              height={400}
+              width={400}
+              style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+              className="col-span-2 rounded-lg  "
+            />
+            <Image
+              src="/sport-3.png"
+              alt="sport-3"
+              height={400}
+              width={400}
+              style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+              className="rounded-lg"
+            />
+            <Image
+              src="/sport-4.png"
+              alt="sport-4"
+              height={400}
+              width={400}
+              style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+              className="col-span-2 rounded-lg"
+            />
+            <Image
+              src="/sport-5.png"
+              alt="sport-5"
+              height={400}
+              width={400}
+              style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+              className="col-span-2 rounded-lg"
+            />
           </div>
         </div>
       </div>
