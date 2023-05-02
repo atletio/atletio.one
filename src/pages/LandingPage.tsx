@@ -61,7 +61,7 @@ const LandingPage = () => {
           </div>
 
           <div className="bg-white px-4 py-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
-            <div className="gap4 flex flex-col gap-4 ">
+            <div className="gap4 mx-auto flex max-w-4xl flex-col gap-4">
               <h1 className="text-4xl font-extrabold md:text-center">
                 Popular Exercise
               </h1>
@@ -121,7 +121,7 @@ const LandingPage = () => {
           </div>
 
           <div className="bg-white px-4 py-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
-            <div className="gap4 flex flex-col gap-4 ">
+            <div className="gap4 mx-auto flex max-w-4xl flex-col gap-4">
               <h1 className="text-center text-4xl font-extrabold">
                 Why Choose Us ?
               </h1>
@@ -255,7 +255,7 @@ const LandingPage = () => {
 
           <div className="bg-white px-4 py-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
             <div className="flex flex-col items-center justify-center gap-4">
-              <div className="flex flex-col gap-4 md:max-w-4xl">
+              <div className="flex max-w-2xl flex-col gap-4 md:max-w-4xl ">
                 <h1 className="text-start text-4xl font-extrabold md:text-center">
                   Testimonials
                 </h1>
@@ -305,11 +305,56 @@ const LandingPage = () => {
                       </div>
                     ))}
                 </div>
-                <button className="w-full gap-1 rounded-lg border border-[#D1D5DB] px-6 py-3.5 text-main md:max-w-fit md:self-center">
+                <button className="w-full gap-1 rounded-lg border border-[#D1D5DB] px-5 py-2.5 text-main md:max-w-fit md:self-center">
                   View More
                 </button>
               </div>
             </div>
+          </div>
+
+          <div className="bg-white px-4 py-8 md:px-4 md:py-12 lg:px-20 lg:py-12">
+            <div className="gap4 flex flex-col gap-4 ">
+              <h1 className="text-center text-4xl font-extrabold">
+                Contact Us
+              </h1>
+              <span className="text-center text-base font-normal text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                esse quibusdam impedit explicabo
+              </span>
+            </div>
+
+            <form className="mx-auto flex max-w-2xl flex-col gap-8 pt-8">
+              <label className="flex flex-col gap-2 text-base font-medium">
+                Your Email
+                <input
+                  className="rounded-lg border border-[#D1D5DB] bg-[#F9FAFB] px-5 py-3.5 text-sm font-normal text-main"
+                  placeholder="name@atletio.com"
+                  type="email"
+                  required
+                />
+              </label>
+              <label className="flex flex-col gap-2 text-base font-medium">
+                Subject
+                <input
+                  className="rounded-lg border border-[#D1D5DB] bg-[#F9FAFB] px-5 py-3.5 text-sm font-normal text-main"
+                  placeholder="Let us know how we can help you"
+                />
+              </label>
+              <label className="flex flex-col gap-2 text-base font-medium">
+                Message
+                <textarea
+                  className="min-h-[186px] rounded-lg border border-[#D1D5DB] bg-[#F9FAFB] px-5 py-3.5 text-sm font-normal text-main"
+                  placeholder="Your message"
+                />
+              </label>
+
+              <button
+                type="submit"
+                className="rounded-lg bg-primary px-5 py-3 text-white md:max-w-fit"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
